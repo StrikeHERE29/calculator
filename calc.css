@@ -25,6 +25,7 @@ button{
     font-weight: bold;
     background-color: hsl(0, 0%, 30%);
     cursor: pointer;
+  filter: drop-shadow(10px 7px 10px hsl(0, 0%, 10%));
 }
 
 #display{
@@ -37,6 +38,7 @@ button{
     text-align: left;
     font-size: 3rem;
     font-weight: bold;
+   
 }
 
 body{
@@ -44,6 +46,7 @@ body{
     justify-content: center;
     height: 100vh;
     align-items: center;
+    background-color: hsl(0, 0%, 70%);
 }
 
 

@@ -2,7 +2,7 @@ let display = document.getElementById("display");
 let btns = document.querySelectorAll(".btns");
 let calc = document.querySelector(".calc");
 let deleteDisplay = document.querySelector(".clear");
-
+let operator = document.querySelectorAll(".operator");
 
 
 btns.forEach(btn =>{
@@ -17,7 +17,7 @@ deleteDisplay.addEventListener("click",(e)=>{
 
 function handleClick(e){
     let input = e.target.textContent;
-    display.value += input;
+  display.value += input;
 }
 
 calc.addEventListener("click", calculate)
