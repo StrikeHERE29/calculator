@@ -1,12 +1,27 @@
 let display = document.getElementById("display");
+let btns = document.querySelectorAll(".btns");
+let calc = document.querySelector(".calc");
+let deleteDisplay = document.querySelector(".clear");
 
-function showOnDisplay(input){
+
+
+btns.forEach(btn =>{
+    btn.addEventListener("click", handleClick)
+})
+
+
+deleteDisplay.addEventListener("click",(e)=>{
+    display.value = "";
+})
+
+
+function handleClick(e){
+    let input = e.target.textContent;
     display.value += input;
 }
 
-function clearDisplay(){
-    display.value = "";
-} 
+calc.addEventListener("click", calculate)
+
 
 
 function calculate(){
