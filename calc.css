@@ -35,6 +35,8 @@ button{
     height: 6rem;
     outline: none;
     text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 body{
